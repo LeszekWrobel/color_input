@@ -6,12 +6,12 @@
 <body>
 <a class="btn btn-outline-secondary" href="index.php" role="button">Jeden kolor</a>
 <h2>Color Picker</h2>
+Select color:
 <form method="post" action="">
-  Select your favorite color:
 <?php $i=0;
 for ($i=0; $i<8; $i++){?>
-    <div class="">
-      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
+    <div class="color" style="float:left">
+      <input type="color" name="favcolor[]"  value="#ff0000"  style="cursor: pointer"><input type="text" name="name_color[]" size="10px" placeholder="opis koloru">
     </div>
 <?php   } ?>
   <input type="submit">
