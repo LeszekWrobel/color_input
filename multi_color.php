@@ -11,7 +11,7 @@ Select color:
 <?php $i=0;
 for ($i=0; $i<8; $i++){?>
     <div class="color" style="float:left">
-      <input type="color" name="favcolor[]"  value="#ff0000"  style="cursor: pointer"><input type="text" name="name_color[]" size="10px" placeholder="opis koloru">
+      <input type="color" name="favcolor[]"  value="#ffffff"  style="cursor: pointer"><input type="text" name="name_color[]" size="10px" placeholder="opis koloru">
     </div>
 <?php   } ?>
   <input type="submit">
@@ -29,14 +29,19 @@ foreach( $_POST['name_color'] as $name_color)
   <div class="row">
     <div class="col-sm-6" >
         <div class="row">
-<?php $i=0;
-for ($i=0; $i<8; $i++){
-   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][$i].'">';
-   echo '<b>abcd<br />'.$_POST['name_color'][$i].'</b>';
-   ?>
-  </div>
- <?php
-} ?>
+<?php
+$i=0;$ilosc_kolorow=0;
+for ($i=0; $i<8; $i++){//wyświetlamy opis koloru na podkładzie w wybranym kolorze
+  if ($_POST['favcolor'][$i] != '#ffffff') {//aby puste (białe) inputy kolorów nie były wyswietlane
+    echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][$i].'">';//background-color
+    echo '<b>'.$_POST['name_color'][$i].'</b>'; //opis koloru
+    $ilosc_kolorow++
+    ?> </div>
+<?php
+  }
+}
+	echo '<br /><b> Ilość kolorów = '.$ilosc_kolorow.'</b>'; // Wyświetla ilość kolorów
+?>
       </div>
     </div>
   </div>
