@@ -8,7 +8,8 @@
 <h2>Color Picker</h2>
 <form method="post" action="">
   Select your favorite color:
-<?php for ($i=0; $i<8; $i++){?>
+<?php $i=0;
+for ($i=0; $i<8; $i++){?>
     <div class="">
       <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
     </div>
