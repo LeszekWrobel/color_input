@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <?php   require_once ('head.php') ?>
+</head>
 <body>
-<a href="multi_color.php"><input type="submit" name="submit" a href="multi_color.php">wiele kolorów</input></a>
+<a class="btn btn-outline-secondary" href="multi_color.php" role="button">Multi kolor</a>
 <h2>Color Picker</h2>
 <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
 <p>Depending on browser support:<br>A color picker can pop-up when you enter the input field.</p>
