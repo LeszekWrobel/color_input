@@ -27,49 +27,19 @@ foreach( $_POST['name_color'] as $name_color)
 ?>
 <div class="container">
   <div class="row">
-<?php
-   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][0].'">';
-   echo 'One of three columns <br />'.$_POST['name_color'][0];
-?>
-        </div>
-<?php
-   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][1].'">';
-   echo 'One of three columns <br />'.$_POST['name_color'][1];
-?>
-        </div>
-<?php
-   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][2].'">';
-   echo 'One of three columns <br />'.$_POST['name_color'][2];
-?>
-        </div>
-        <?php
-           echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][3].'">';
-           echo 'One of three columns <br />'.$_POST['name_color'][4];
-        ?>
-                </div>
-        <?php
-           echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][4].'">';
-           echo 'One of three columns <br />'.$_POST['name_color'][4];
-        ?>
-                </div>
-        <?php
-           echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][5].'">';
-           echo 'One of three columns <br />'.$_POST['name_color'][5];
-        ?>
-                </div>
-                <?php
-                   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][6].'">';
-                   echo 'One of three columns <br />'.$_POST['name_color'][6];
-                ?>
-                        </div>
-                <?php
-                   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][7].'">';
-                   echo 'One of three columns <br />'.$_POST['name_color'][7];
-                ?>
-                        </div>
-
+    <div class="col-sm-6" >
+        <div class="row">
+<?php $i=0;
+for ($i=0; $i<8; $i++){
+   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][$i].'">';
+   echo '<b>abcd<br />'.$_POST['name_color'][$i].'</b>';
+   ?>
+  </div>
+ <?php
+} ?>
+      </div>
+    </div>
   </div>
 </div>
-
 </body>
 </html>
