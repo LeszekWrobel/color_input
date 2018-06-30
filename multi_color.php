@@ -13,27 +13,6 @@
       <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
     </div>
 <?php   } ?>
-    <!-- <div class="">
-      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
-    </div>
-     <div class="">
-      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
-    </div>
-    <div class="">
-      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
-    </div>
-    <div class="">
-      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
-    </div>
-     <div class="">
-      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
-    </div>
-    <div class="">
-      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
-    </div>
-     <div class="">
-      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
-    </div> -->
   <input type="submit">
 </form>
 <p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.</p>
@@ -62,6 +41,32 @@ foreach( $_POST['name_color'] as $name_color)
    echo 'One of three columns <br />'.$_POST['name_color'][2];
 ?>
         </div>
+        <?php
+           echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][3].'">';
+           echo 'One of three columns <br />'.$_POST['name_color'][4];
+        ?>
+                </div>
+        <?php
+           echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][4].'">';
+           echo 'One of three columns <br />'.$_POST['name_color'][4];
+        ?>
+                </div>
+        <?php
+           echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][5].'">';
+           echo 'One of three columns <br />'.$_POST['name_color'][5];
+        ?>
+                </div>
+                <?php
+                   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][6].'">';
+                   echo 'One of three columns <br />'.$_POST['name_color'][6];
+                ?>
+                        </div>
+                <?php
+                   echo '<div class="col-sm" style="background-color:'.$_POST['favcolor'][7].'">';
+                   echo 'One of three columns <br />'.$_POST['name_color'][7];
+                ?>
+                        </div>
+
   </div>
 </div>
 
