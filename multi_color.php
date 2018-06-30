@@ -8,15 +8,32 @@
 <h2>Color Picker</h2>
 <form method="post" action="">
   Select your favorite color:
-  <div class="">
-    <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
+<?php for ($i=0; $i<8; $i++){?>
+    <div class="">
+      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
     </div>
-   <div class="">
+<?php   } ?>
+    <!-- <div class="">
       <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
     </div>
      <div class="">
       <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
     </div>
+    <div class="">
+      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
+    </div>
+    <div class="">
+      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
+    </div>
+     <div class="">
+      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
+    </div>
+    <div class="">
+      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
+    </div>
+     <div class="">
+      <input type="color" name="favcolor[]" value="#000000"><input type="text" name="name_color[]">
+    </div> -->
   <input type="submit">
 </form>
 <p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.</p>
@@ -50,4 +67,3 @@ foreach( $_POST['name_color'] as $name_color)
 
 </body>
 </html>
-
