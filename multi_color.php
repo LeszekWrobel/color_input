@@ -5,9 +5,11 @@
 </head>
 <body>
 <a class="btn btn-outline-secondary" href="index.php" role="button">Jeden kolor</a>
+<hr>
 <h2>Color Picker</h2>
+<hr>
 Select color:
-<form  method="post" action="" style="border: 2px solid #ccc;">
+<form  method="post" action="">
   <div class="">
 <?php $i=0;
 for ($i=0; $i<8; $i++){// wyświetlamy 8 pol wyboru koloru w formularzu.
@@ -21,6 +23,7 @@ for ($i=0; $i<8; $i++){// wyświetlamy 8 pol wyboru koloru w formularzu.
 </div>
 </form>
 <div class="" style="clear:both"></div>
+<hr>
 <p><b>Note:</b> type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.</p>
 <?php
 if (isset($_POST['favcolor'])){ //wyświetlamy dane z formularza w pętli foreach w formie tekstowej

@@ -24,5 +24,6 @@ if (isset($_GET['favcolor'])){
 	print '<input type="text" style="background-color:'.$value.'" size="10px">aaaa</input>';
 }
 ?>
+<?php   require_once ('fotter.php') ?>
 </body>
 </html>
