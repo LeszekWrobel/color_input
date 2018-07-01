@@ -6,5 +6,8 @@ Kolory bedą jako background opisu a wszystko wstawione do grid-ów<br />
 <img src="img/src1.png"><br />
 <img src="img/src1a.png"><br />
 <img src="img/src1b.png"><br />
+<hr><hr>
 <h2>Score:</h2>
 <img src="img/src3.png">
+<br /><h2>Inspiration:</h2>
+https://codepen.io/noahblon/details/ZbjmbK
