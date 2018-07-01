@@ -28,7 +28,7 @@ foreach( $_POST['name_color'] as $name_color)
 if ($name_color != '') {print $name_color.' | ';} // aby seperatory nie były wyświetlane gdy polo koloru jest puste
 foreach( $_POST['favcolor'] as $val)
   if ($val != '#ffffff') {	print $val.' | ';}//aby puste (białe) inputy kolorów nie były wyswietlane
-} // end foreach
+}
 if (isset($_POST['favcolor'])&&($_POST['name_color'])){
 ?>
 <div class="container">
