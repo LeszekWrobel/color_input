@@ -1,5 +1,5 @@
 # color_input , multi_color
-input one and multicolor
+input one or multicolor.<br />
 Program pozwala wybrać kolory i opisy.
 Kolory bedą jako background opisu a wszystko wstawione so grid-ów
-<img scr="img/scr1.png">
+<img src="img/scr1.png">
